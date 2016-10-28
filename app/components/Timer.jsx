@@ -36,12 +36,6 @@ var Timer = React.createClass({
       this.setState({
         count: newCount
       });
-
-      if(newCount === 0){
-        this.setState({
-          countdownStatus: 'stopped'
-        })
-      }
     }, 1000);
   },
   handleStatusChange: function(newStatus){
